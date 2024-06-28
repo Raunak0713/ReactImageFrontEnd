@@ -1,0 +1,130 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #72EDF2 10%, #5151E5 100%);
+  font-family: 'Arial', sans-serif;
+}
+
+.app {
+  background: #ffffff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 80%; /* Adjusted to 80% of the screen width */
+  width: 100%;
+  font-size: 1.2rem; /* Increased font size */
+  line-height: 1.5;
+  margin: auto; /* Center the card horizontally */
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clerksi {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #5151E5;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem; /* Adjusted button font size */
+  margin-top: 10px; /* Added margin to separate button from input */
+}   
+
+.image-container img {
+  max-width: 100%;
+  max-height: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.extra-info {
+  color: #333;
+  margin: 20px 0;
+}
+
+.extra-info span {
+  display: inline-block;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.input-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-container input {
+  width: 80%;
+  padding: 12px; /* Increased padding for better spacing */
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1.1rem; /* Increased font size */
+  font-family: 'Arial', sans-serif; /* Changed font family */
+}
+
+.input-container button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #5151E5;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem; /* Adjusted button font size */
+  margin-top: 10px; /* Added margin to separate button from input */
+}
+
+.input-container button:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
+
+button.surprise {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #5151E5;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem; /* Adjusted button font size */
+  margin-top: 10px; 
+}
+
+button.surprise:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
+
+.answer, .error {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1rem; /* Adjusted answer/error font size */
+}
+
+.answer {
+  background: #e1ffe1;
+  color: #2e7d32;
+}
+
+.error {
+  background: #ffe1e1;
+  color: #d32f2f;
+}
