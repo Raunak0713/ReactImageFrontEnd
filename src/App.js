@@ -35,7 +35,7 @@ const App = () => {
                     "Content-Type": "application/json"
                 }
             };
-            const response = await fetch("http://localhost:8000/openai", options);
+            const response = await fetch("https://reactimagebackend.onrender.com/openai", options);
             const text = await response.text();
             setResponse(text);
         } catch (error) {
@@ -62,7 +62,7 @@ const App = () => {
                 method: 'POST',
                 body: formData
             };
-            const response = await fetch('http://localhost:8000/upload', options);
+            const response = await fetch('https://reactimagebackend.onrender.com/upload', options);
             const data = await response.json();
             console.log(data);
         } catch (error) {
